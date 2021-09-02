@@ -5,7 +5,6 @@ def extract():
         y = len(lines)
         x = 0
     while x < y:
-        #print(lines)
         filename = lines[x].rstrip()
         print(x, filename)
         program='NBTUtil.exe'
