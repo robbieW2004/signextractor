@@ -7,7 +7,7 @@ def extractsigns():
                 with open(filename, 'r') as f:
                     lines = f.read().splitlines()
                     for i, line in enumerate(lines):
-                        if "id: minecraft:sign" in line: # if you feel like list other blocks you put them after minecraft:
+                        if "id: minecraft:sign" in line: # if you want to you can change "sign" to any block you would like to list
                             j = i-N if i>N else 0
                             for k in range(j,i + 5):
                                 print(lines[k])
